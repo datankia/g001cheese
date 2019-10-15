@@ -1,0 +1,329 @@
+/* 全体的に95%中央揃えでラップし、できればレスポンシブに */
+.wrap0 {
+  margin: 0 auto;
+  width: 95%;
+}
+/* ２重フレックスボックスで横並びを実現 */
+header {
+  /* background-color: greenyellow; */
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hdr0imgbox {
+  /* background-color: pink; */
+  width: 130px;
+  height: 50px;
+}
+/* 画像がコンパクトに表示、上下左右にpaddingを追加 */
+.hdr0imgbox img {
+  width: 120px;
+  height: 40px;
+  object-fit: contain;
+  padding: 5px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  height: 14px;
+  font-size: 14px;
+  color: blue;
+  text-align: center;
+  padding-left: 15px;
+}
+
+/* 疑似クラス、マウスを当てるときに色と透明度が変わる */
+nav a:hover {
+  color:red; 
+  opacity: 0.5
+}
+
+/* メニューバーのスペースが等間隔になるように */
+.menu4s {
+  width: 40px;
+}
+
+.menu5s {
+  width: 50px;
+}
+
+.menu6s {
+  width: 60px;
+}
+
+.menu7s {
+  width: 70px;
+}
+/* 画像が中央を起点にレスポンシブになるよう */
+.main0visual {
+  background:beige;
+  width: 100%;
+  height: 400px;
+  background-image: url(../img/mainbg.png);
+  background-repeat: no-repeat;
+/* 画像中央を起点縦50％横50%ブラウザが動いても合せてくれるように */
+  background-position:50% 50%;
+/* 縦横比保持したままなるべく全体を覆うように */
+  background-size: cover;
+  /* 背景画像をスマホにも対応するように */
+  /* background-size: 100% auto; */
+}
+
+.main0title {
+  text-align: center;
+  color: whitesmoke;
+  font-size: 48px;
+  padding-top: 165px;
+}
+
+.main0sub {
+  text-align: center;
+  color:whitesmoke;
+  font-size: 18px;
+  padding-top: 20px;
+}
+
+section {
+  margin-top: 40px;
+}
+
+h1 {
+  color: maroon;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h2 {
+  color: blue;
+  font-size: 14px;
+  text-align: center;
+  line-height: 20px;
+  margin-top: -20px;
+/* h1とpの間が全て等間隔30pxになるように、30-(30-20+20)=0 */
+  margin-bottom: 0;
+}
+
+section p {
+  margin: 0 auto;
+  width: 70%;
+  font-size: 14px;
+  text-align: center;
+  line-height: 50px;
+}
+/* 学校名などを違う色で強調 */
+em {
+  color: blueviolet;
+}
+
+.about0imgs {
+  margin: 0 auto;
+  margin-top: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.about0img {
+  width: 25%;
+}
+
+.about0img img {
+  width: 100%;
+  object-fit: contain;
+}
+
+#course0 h2 {
+  margin-bottom: 40px;
+}
+
+.course0box {
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.course0img {
+  width: 50%;
+  height: 400px;
+}
+
+.course0img img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.course0text {
+  width: 50%;
+  background: lightgoldenrodyellow;
+  height: 400px;
+  text-align: center;
+}
+
+.course0text h3 {
+  font-size: 24px;
+  font-weight: bold;
+  padding-top: 100px;
+}
+
+.course0text p {
+  line-height: 30px;
+  padding-top: 30px;
+  text-align: left;
+}
+
+.news0boxes {
+  margin: 0 auto;
+  width: 90%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.news0box {
+  width: 30%;
+  height: 350px;
+}
+
+.news0img {
+  width: 100%;
+  height: 220px;
+}
+
+.news0img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.news0box h3 {
+  margin-top: 20px;
+  text-align: center;
+  color: blue;
+}
+
+.news0box p {
+  margin-top: 10px;
+  line-height: 20px;
+  text-align: left;
+  width: 80%
+}
+
+.more0btn {
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 100px;
+  height: 30px;
+  background: #ffd61a;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  padding-top:10px;
+  border-radius: 5%;
+  cursor: pointer;
+}
+
+.more0btn:hover {
+  opacity: 0.5;
+}
+
+#access0 {
+  width: 100%;
+  height: 600px;
+  background: silver;
+}
+
+#access0 h1 {
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#map0box {
+  background: skyblue;
+  margin: 0 auto;
+  width: 95%;
+  height:350px;
+}
+
+.details {
+  margin: 0 auto;
+  padding-top: 20px;
+  width: 500px;
+  display: flex;
+  justify-content: flex-start;
+  color: maroon;
+}
+
+.row0name {
+  width: 200px;
+  line-height: 30px;
+}
+
+.row0data {
+  width: 300px;
+  line-height: 30px;
+}
+
+.form0box {
+  margin-top: 40px;
+  height: 600px;
+  width: 100%;
+  /* background: skyblue; */
+}
+
+table {
+  width: 600px;
+  margin: 0 auto; 
+}
+
+td {
+  padding: 20px 10px;
+  vertical-align: middle;
+  border: solid 1px #bfbfbf;
+}
+
+label {
+  color:  #222222;
+  font-size: 12px;
+  text-align: left;
+} 
+
+.in0box {
+  width: 100%;
+  /* padding: 0; */
+}
+
+.detail0box {
+  height: 100px;
+  width: 100%;
+  padding: 0;
+}
+
+footer {
+  width: 100%;
+  padding: 30px 0;
+  margin-top: 70px;
+  margin-bottom: 70px;
+  background: #707070;
+  color: white;
+  font-size: 14px;
+  text-align: center;
+}
+
+.gm-style img[src="img/c.png"] {
+  border-radius:50%;
+}
